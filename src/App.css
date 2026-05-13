@@ -1,0 +1,44 @@
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #2C1810;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(44, 24, 16, 0.8);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 165, 100, 0.4);
+  border-radius: 2px;
+}
+
+textarea::placeholder {
+  color: rgba(180, 140, 100, 0.45);
+}
+
+button {
+  font-family: inherit;
+}
